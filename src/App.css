@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@tailwind utilities;
+@custom-variant dark (&:is(.dark *));
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  
+}
+button , input{
+  cursor: pointer;
+  @apply bg-blue-200 p-2 rounded-[0.5rem] w-40 text-blue-700
+}
+input{
+  @apply w-52
+}
+
+
